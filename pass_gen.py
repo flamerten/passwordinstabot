@@ -2,6 +2,7 @@ import csv
 from random_word import RandomWords
 import random
 from datetime import date
+import time
 
 def read_csv(csvfilename):
     """
@@ -35,6 +36,7 @@ def add_entry(new_entry):
 
 def generate():
     r = RandomWords()
+    time.sleep(1)
     f1 = r.get_random_word(minLength = 3)
     f2 = r.get_random_word(minLength = 3)
     num = random.randint(100,999)
