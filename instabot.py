@@ -46,7 +46,7 @@ def popups():
 def navigate():
     profile = WebDriverWait(driver,10).until(
             EC.presence_of_element_located((By.XPATH  ,
-                                            '//*[@id="react-root"]/section/nav/div[2]/div/div/div[3]/div/div[5]/span')))
+                                            '//*[@id="react-root"]/section/nav/div[2]/div/div/div[3]/div/div[5]/span/img')))
     profile.click()
 
 
